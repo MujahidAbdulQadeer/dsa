@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+	header a{
+	color: white;
+	}
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project {
+            background: #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            width: 30%;
+        }
+        footer {
+            margin-top: 20px;
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abdul Qadeer</h1>
+	<a href="#about">About</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+	<a href="#project">Projects</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+	<a href="#contact">Contact</a>
+    </header>
+    <div id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I am an Engineering Student currently pursuing my Bachelor Degree from Vivekanand Education Society's Institute of Technology. My Past is that I Completed my Diploma in Computer Engineering from Mohammed Haji Saboo Siddik Polytechnic. Right now I'm Learning Web Development. I want to  creating simple and effective websites.</p>
+        <h2>Projects</h2>
+        <div id="project" class="projects">
+            <div class="project">
+                <h3>StyleMirror - AR</h3>
+                <p>This was My Diploma Final Year Project. In this we basically made an Android application in which we integrated our core feature that is Virtual Try On. It allow user to try the clothes and accessories virtually. </p>
+            </div>
+            <div class="project">
+                <h3>OTT Platform</h3>
+                <p>In this we simply created a website named as MYNX. We uploaded all Video and trailers of Series and Movies onto the streaming Server. Then we just link it with our website for Streaming.</p>
+            </div>
+            <div class="project">
+                <h3>Chatbot</h3>
+                <p>This was very Simple Project. It was totally developed using PHP and for Database we used mysql.</p>
+            </div>
+        </div>
+    </div>
+    <footer id="contact">
+        <p>Contact me at: aq@123@gmail.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Event Handling</title>
+	</head>
+	<body>
+		Enter Name : <input type="text" id="name">&nbsp&nbsp&nbsp<button id="subm" onClick=show()>Show</button>
+		<h1 id="n"></h1>
+		<h2 id="output"></h2>
+		<button id="myButton">Show</button>
+		<script>
+let num1 = 10;
+let num2 = 5;
+
+function performOperations() {
+    let sum = num1 + num2;
+    let difference = num1 - num2;
+    let product = num1 * num2;
+    let quotient = num1 / num2;
+    
+    let result = `Sum: ${sum}\nDifference: ${difference}\nProduct: ${product}\nQuotient: ${quotient}`;
+    document.getElementById("output").innerText = result;
+}
+
+ function show(){
+let name = document.getElementById("name").value;
+document.getElementById("n").innerText = name;
+}
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("myButton").addEventListener("click", function () {
+        performOperations();
+    });
+});
+
+		</script>
+	</body>
+</html>
